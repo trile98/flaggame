@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/talayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/brtest2"
+
+    >
+
+    <TableRow
+        android:gravity="end"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+            <ImageButton
+                android:id="@+id/btncancel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/cancel"
+                android:layout_gravity="end"
+                />
+
+    </TableRow>
+
+
+   <TableRow
+       android:gravity="center_horizontal"
+       android:layout_marginTop="70dp"
+       >
+       <ImageView
+           android:id="@+id/img"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:background="@drawable/ques"
+           />
+   </TableRow>
+
+    <TableRow
+        android:layout_marginTop="15dp"
+        android:weightSum="2.5"
+        android:gravity="center">
+        <FrameLayout
+            android:id="@+id/flbtnA"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/answer"
+            android:layout_weight="1"
+            android:layout_marginRight="30dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="true"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textAlignment="gravity"
+                android:id="@+id/btnA"
+            />
+
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/chooseA"
+                />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/flbtnB"
+            android:layout_gravity="center"
+            android:layout_marginLeft="-20dp"
+            android:background="@drawable/answer"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="true"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textAlignment="gravity"
+                android:id="@+id/btnB"/>
+
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/chooseB"
+                />
+
+        </FrameLayout>
+    </TableRow>
+
+
+   <TableRow
+       android:weightSum="2.5"
+       android:layout_marginTop="10dp"
+       android:gravity="center"
+       >
+       <FrameLayout
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:id="@+id/flbtnC"
+           android:layout_gravity="center_horizontal"
+           android:background="@drawable/answer"
+           android:layout_weight="1"
+           android:layout_marginRight="30dp"
+           >
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:textSize="20sp"
+               android:layout_gravity="center"
+               android:gravity="center"
+               android:textAlignment="gravity"
+               android:textAllCaps="true"
+               android:id="@+id/btnC"
+            />
+           <pl.droidsonroids.gif.GifImageView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:id="@+id/chooseC"
+               />
+
+       </FrameLayout>
+
+       <FrameLayout
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:id="@+id/flbtnD"
+           android:layout_gravity="center"
+           android:layout_marginLeft="-20dp"
+           android:layout_weight="1"
+           >
+
+           <TextView
+               android:background="@drawable/answer"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_gravity="center"
+               android:gravity="center"
+               android:textAlignment="gravity"
+               android:textSize="20sp"
+               android:textAllCaps="true"
+               android:id="@+id/btnD" />
+
+           <pl.droidsonroids.gif.GifImageView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:id="@+id/chooseD"
+               />
+
+       </FrameLayout>
+
+
+   </TableRow>
+
+
+    <TableRow
+        android:layout_marginTop="20dp">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/progress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitStart"
+            android:src="@drawable/rabbit1" />
+    </TableRow>
+
+</TableLayout>
+

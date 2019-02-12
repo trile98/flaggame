@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/answer">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/warn"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/warn"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/titlecancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Are you sure for stopping game now?"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:layout_below="@+id/warn"
+            />
+
+        <TextView
+            android:id="@+id/titlephu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="(Your scores won't be saved)"
+            android:textSize="15dp"
+            android:layout_marginTop="5dp"
+            android:textAlignment="center"
+            android:layout_below="@+id/titlecancel"
+            android:textStyle="bold"
+            />
+
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:id="@+id/accept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titlephu"
+            android:text="Sure"
+            android:textSize="20dp"
+            android:layout_marginLeft="70dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"
+            />
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/accept"
+            android:layout_alignBottom="@+id/accept"
+            android:layout_toRightOf="@+id/accept"
+            android:padding="10dp"
+            android:text="back to game"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginBottom="20dp"/>
+
+    </RelativeLayout>
+

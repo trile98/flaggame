@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.trile.flagv12.Highscore"
+    android:orientation="vertical"
+    android:background="@drawable/sky">
+
+
+
+    <ImageView
+        android:id="@+id/high"
+        android:layout_width="100dp"
+        android:layout_height="190dp"
+        android:layout_gravity="center"
+        android:src="@drawable/highscore"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageButton
+        android:id="@+id/btnback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <ImageButton
+        android:id="@+id/btndire"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/direc"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/btnback"
+        android:layout_alignParentRight="true"
+        />
+
+    <ListView
+            android:layout_marginTop="10dp"
+            android:id="@+id/lvscore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_below="@id/high"
+            >
+
+
+        </ListView>
+
+
+</RelativeLayout>

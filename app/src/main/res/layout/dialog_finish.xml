@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/loutfin"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/ques">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="thanks for playing"
+        android:textSize="35dp"
+        android:textAllCaps="true"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:id="@+id/txtthank"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtkq"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:layout_marginTop="15dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Your score is saved.
+Now you are being moved to main menu"
+        android:textSize="25dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:id="@+id/txtthongbao"
+        />
+</LinearLayout>

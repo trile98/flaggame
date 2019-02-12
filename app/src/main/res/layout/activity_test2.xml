@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout
+    android:id="@+id/relayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/brtest2"
+    >
+    
+    <TableRow
+        android:gravity="end"
+        android:layout_width="match_parent">
+
+
+            <ImageButton
+                android:id="@+id/btncancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cancel"
+                android:layout_gravity="end"
+                />
+    </TableRow>
+    
+    <TableRow
+    android:gravity="center"
+    android:layout_marginTop="70dp"
+    android:weightSum="1.5"
+    >
+        <TextView
+            android:id="@+id/img"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/ques"
+            android:textSize="30sp"
+            android:textAllCaps="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textAlignment="gravity"
+            android:layout_weight="1"
+            />
+    </TableRow>
+    
+  
+
+    <TableRow
+        android:layout_marginTop="20dp"
+        android:weightSum="2.5"
+        android:gravity="center"
+        >
+        <FrameLayout
+            android:id="@+id/flbtnA"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/answer"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_marginRight="30dp"
+            >
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:id="@+id/btnA"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                />
+
+
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/chooseA"
+                />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/flbtnB"
+            android:background="@drawable/answer"
+            android:layout_gravity="center"
+            android:layout_marginLeft="-20dp"
+            android:layout_weight="1"
+            >
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:id="@+id/btnB"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"/>
+
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/chooseB"
+                />
+
+        </FrameLayout>
+    </TableRow>
+
+    <TableRow
+        android:layout_marginTop="10dp"
+        android:weightSum="2.5"
+        android:gravity="center"
+        >
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/flbtnC"
+            android:background="@drawable/answer"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_marginRight="30dp"
+            >
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:id="@+id/btnC"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"/>
+
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/chooseC"
+                />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/flbtnD"
+            android:background="@drawable/answer"
+            android:layout_gravity="center"
+            android:layout_marginLeft="-20dp"
+            android:layout_weight="1"
+            >
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:id="@+id/btnD"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"/>
+
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/chooseD"
+                />
+
+        </FrameLayout>
+    </TableRow>
+    
+   <TableRow
+       android:layout_marginTop="20dp">
+       <pl.droidsonroids.gif.GifImageView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:src="@drawable/rabbit1"
+           android:scaleType="fitStart"
+           android:id="@+id/progress"
+
+           />
+   </TableRow>
+
+</TableLayout>
+

@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/Flhuongdan"
+    >
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@drawable/note2"
+        android:scaleType="fitXY"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cancel"
+            android:layout_gravity="right"
+            android:id="@+id/canceldirec"/>
+
+        <ScrollView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:scrollbars="vertical"
+            android:layout_marginBottom="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="17dp"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="50dp"
+
+                >
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txttitle"
+                    android:text="directions"
+                    android:textSize="30sp"
+                    android:textColor="#f000"
+                    android:textAllCaps="true"
+                    android:textAlignment="center"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="There are 10 questions for each level"
+                    android:textColor="#f000"
+                    android:textSize="20dp"
+                    android:id="@+id/txthd1"/>
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/rabbit1"
+                    android:id="@+id/imgprogress"
+                    android:layout_gravity="center"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="This rabbit shows time for each question.When she run to the end of the screen (about 10 seconds), the right answers will be showed and the next question will be started."
+                    android:textColor="#f000"
+                    android:textAlignment="textStart"
+                    android:textSize="20dp"
+                    android:id="@+id/txtprogress"
+                    android:gravity="start"/>
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/choose"
+                    android:id="@+id/imgchoose"
+                    android:layout_gravity="center"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="This arrow marks the answer which you choose"
+                    android:textColor="#f000"
+                    android:textSize="20dp"
+                    android:textAlignment="gravity"
+                    android:gravity="start"
+                    android:id="@+id/txtchoose"
+                    tools:ignore="HardcodedText" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/cancel"
+                    android:layout_gravity="center"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="You can use this button when you want to stop the game."
+                    android:textSize="20sp"
+                    android:textColor="#f000"
+                    android:id="@+id/txthd2"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="*************"
+                    android:textSize="30dp"
+                    android:textColor="#f000"
+                    android:textAlignment="center"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/space"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    >
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#f000"
+                        android:text="There are 2 kinds of ways to play this game. Touch the IMAGE of kind of way which you want to play please!"
+                        android:textSize="20sp"
+                        android:id="@+id/txtgt"
+                        />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/checktype1"
+                        android:layout_below="@+id/txtgt"
+                        android:layout_marginTop="50dp"/>
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/typen"
+                        android:layout_below="@+id/txtgt"
+                        android:id="@+id/type1"
+                        android:layout_marginTop="15dp"
+                        android:layout_toRightOf="@+id/checktype1"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#f000"
+                        android:text="According to the flag, choose an appropriate nation's name."
+                        android:textSize="20sp"
+                        android:layout_toRightOf="@+id/type1"
+                        android:layout_below="@id/txtgt"
+                        android:id="@+id/txttype1"
+                        android:layout_marginTop="25dp"
+                        />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/checktype2"
+                        android:layout_below="@+id/type1"
+                        android:layout_marginTop="50dp"/>
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/type1"
+                        android:background="@drawable/typef"
+                        android:id="@+id/type2"
+                        android:layout_marginTop="15dp"
+                        android:layout_toRightOf="@id/checktype2"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#f000"
+                        android:text="According to the name, choose an appropriate flag."
+                        android:textSize="20sp"
+                        android:id="@+id/txttype2"
+                        android:layout_toRightOf="@+id/type2"
+                        android:layout_below="@+id/type1"
+                        android:layout_marginTop="40dp"
+
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#f000"
+                        android:text="Please insert number of questions which you want to play:"
+                        android:textSize="20sp"
+                        android:id="@+id/txtsl"
+                        android:layout_marginTop="20dp"
+                        android:layout_below="@id/type2"
+                        />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtsl"
+                        android:textSize="25sp"
+                        android:textAlignment="center"
+                        android:textColor="#f000"
+                        android:id="@+id/editsl"
+                        android:inputType="numberSigned"/>
+
+                </RelativeLayout>
+
+
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="play"
+                    android:textAllCaps="true"
+                    android:textSize="30dp"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
+                    android:textColor="#f000"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/play"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>

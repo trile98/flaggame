@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.trile.flagv12.MainActivity"
+    android:background="@drawable/sky"
+    >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <pl.droidsonroids.gif.GifImageView
+                android:src="@drawable/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/title"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"/>
+
+
+
+            <pl.droidsonroids.gif.GifImageButton
+
+                android:background="@drawable/easy"
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                android:id="@+id/easy"
+                android:layout_below="@+id/title"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                />
+
+            <pl.droidsonroids.gif.GifImageButton
+                android:background="@drawable/medium"
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/medium"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/easy"
+                android:layout_below="@id/title"
+                />
+
+            <pl.droidsonroids.gif.GifImageButton
+                android:background="@drawable/hard"
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                android:layout_below="@+id/easy"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/hard"
+                android:layout_marginTop="10dp"
+                />
+
+            <ImageView
+                android:id="@+id/high"
+                android:layout_width="170dp"
+                android:layout_height="219dp"
+                android:layout_below="@+id/hard"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="18dp"
+                android:src="@drawable/highscore"/>
+
+        </RelativeLayout>
+
+        <!--<pl.droidsonroids.gif.GifImageView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:scaleType="fitXY"-->
+            <!--android:src="@drawable/br"/>-->
+
+
+
+    </FrameLayout>
